@@ -1,0 +1,106 @@
+prompt,run,ttft_seconds,answer_ttft_seconds,total_seconds,prompt_tokens,completion_tokens,total_tokens,tpot_seconds,tokens_per_second,completion_chars,finish_reason,output,reasoning
+1,1,0.4507518999998865,0.4507518999998865,62.05753589999949,37,160,197,0.38746405031446296,2.5782525470851203,687,stop,"FP16 (16-bit floating point) and BF16 (Brain Floating Point 16) are both 16-bit formats used in LLM inference, but they differ in precision and hardware support.
+
+- **FP16** offers higher precision (more bits for the mantissa) than BF16, allowing for better numerical stability but requiring more memory and computational resources.
+- **BF16** uses a 16-bit format with 8 bits for the mantissa and 8 bits for the exponent, providing lower precision but better hardware efficiency, especially on modern GPUs and TPUs, leading to faster inference and lower memory usage.
+
+BF16 is often preferred in inference due to its efficiency, while FP16 may be used when higher precision is critical.",
+1,2,0.43535719999999856,0.43535719999999856,64.2335662000005,37,160,197,0.4012465974842799,2.4909094958516995,687,stop,"FP16 (16-bit floating point) and BF16 (Brain Floating Point 16) are both 16-bit formats used in LLM inference, but they differ in precision and hardware support.
+
+- **FP16** offers higher precision (more bits for the mantissa) than BF16, allowing for better numerical stability but requiring more memory and computational resources.
+- **BF16** uses a 16-bit format with 8 bits for the mantissa and 8 bits for the exponent, providing lower precision but better hardware efficiency, especially on modern GPUs and TPUs, leading to faster inference and lower memory usage.
+
+BF16 is often preferred in inference due to its efficiency, while FP16 may be used when higher precision is critical.",
+1,3,0.4245139000013296,0.4245139000013296,65.23057180000251,37,160,197,0.40758526981132814,2.452837612562425,687,stop,"FP16 (16-bit floating point) and BF16 (Brain Floating Point 16) are both 16-bit formats used in LLM inference, but they differ in precision and hardware support.
+
+- **FP16** offers higher precision (more bits for the mantissa) than BF16, allowing for better numerical stability but requiring more memory and computational resources.
+- **BF16** uses a 16-bit format with 8 bits for the mantissa and 8 bits for the exponent, providing lower precision but better hardware efficiency, especially on modern GPUs and TPUs, leading to faster inference and lower memory usage.
+
+BF16 is often preferred in inference due to its efficiency, while FP16 may be used when higher precision is critical.",
+1,4,0.3910791000016616,0.3910791000016616,73.29570310000054,37,160,197,0.45851964779873505,2.1829383338025288,687,stop,"FP16 (16-bit floating point) and BF16 (Brain Floating Point 16) are both 16-bit formats used in LLM inference, but they differ in precision and hardware support.
+
+- **FP16** offers higher precision (more bits for the mantissa) than BF16, allowing for better numerical stability but requiring more memory and computational resources.
+- **BF16** uses a 16-bit format with 8 bits for the mantissa and 8 bits for the exponent, providing lower precision but better hardware efficiency, especially on modern GPUs and TPUs, leading to faster inference and lower memory usage.
+
+BF16 is often preferred in inference due to its efficiency, while FP16 may be used when higher precision is critical.",
+1,5,0.4031724000014947,0.4031724000014947,66.89276480000262,37,160,197,0.41817353710692534,2.3918879788923557,687,stop,"FP16 (16-bit floating point) and BF16 (Brain Floating Point 16) are both 16-bit formats used in LLM inference, but they differ in precision and hardware support.
+
+- **FP16** offers higher precision (more bits for the mantissa) than BF16, allowing for better numerical stability but requiring more memory and computational resources.
+- **BF16** uses a 16-bit format with 8 bits for the mantissa and 8 bits for the exponent, providing lower precision but better hardware efficiency, especially on modern GPUs and TPUs, leading to faster inference and lower memory usage.
+
+BF16 is often preferred in inference due to its efficiency, while FP16 may be used when higher precision is critical.",
+2,1,0.6778815000034228,0.6778815000034228,83.78640650000307,44,120,164,0.6983909663865516,1.4322132313908893,552,stop,"KV cache quantization is the process of reducing the precision of the key-value (KV) cache in transformer models to save memory and improve efficiency. Q8_0 is a 8-bit quantization format that represents each element using 8 bits, compared to FP16 (16-bit floating point). By reducing the bit width from 16 to 8, Q8_0 cuts memory usage by approximately half, while maintaining sufficient accuracy for most inference tasks. This makes it more memory-efficient than FP16, enabling larger models or longer sequences to be processed with limited resources.",
+2,2,0.4526791000025696,0.4526791000025696,47.763864500000636,44,120,164,0.3975729865546056,2.5123595265202714,552,stop,"KV cache quantization is the process of reducing the precision of the key-value (KV) cache in transformer models to save memory and improve efficiency. Q8_0 is a 8-bit quantization format that represents each element using 8 bits, compared to FP16 (16-bit floating point). By reducing the bit width from 16 to 8, Q8_0 cuts memory usage by approximately half, while maintaining sufficient accuracy for most inference tasks. This makes it more memory-efficient than FP16, enabling larger models or longer sequences to be processed with limited resources.",
+2,3,0.43000410000240663,0.43000410000240663,47.7629846000018,44,120,164,0.3977561386554571,2.5124058097490725,552,stop,"KV cache quantization is the process of reducing the precision of the key-value (KV) cache in transformer models to save memory and improve efficiency. Q8_0 is a 8-bit quantization format that represents each element using 8 bits, compared to FP16 (16-bit floating point). By reducing the bit width from 16 to 8, Q8_0 cuts memory usage by approximately half, while maintaining sufficient accuracy for most inference tasks. This makes it more memory-efficient than FP16, enabling larger models or longer sequences to be processed with limited resources.",
+2,4,0.4339312999982212,0.4339312999982212,47.758237400001235,44,120,164,0.39768324453784043,2.5126555445280503,552,stop,"KV cache quantization is the process of reducing the precision of the key-value (KV) cache in transformer models to save memory and improve efficiency. Q8_0 is a 8-bit quantization format that represents each element using 8 bits, compared to FP16 (16-bit floating point). By reducing the bit width from 16 to 8, Q8_0 cuts memory usage by approximately half, while maintaining sufficient accuracy for most inference tasks. This makes it more memory-efficient than FP16, enabling larger models or longer sequences to be processed with limited resources.",
+2,5,0.4362269999983255,0.4362269999983255,44.0680704999977,44,120,164,0.36665414705881827,2.7230599987355073,552,stop,"KV cache quantization is the process of reducing the precision of the key-value (KV) cache in transformer models to save memory and improve efficiency. Q8_0 is a 8-bit quantization format that represents each element using 8 bits, compared to FP16 (16-bit floating point). By reducing the bit width from 16 to 8, Q8_0 cuts memory usage by approximately half, while maintaining sufficient accuracy for most inference tasks. This makes it more memory-efficient than FP16, enabling larger models or longer sequences to be processed with limited resources.",
+3,1,0.3655450000005658,0.3655450000005658,25.83231060000253,106,73,179,0.353705077777805,2.8259183288076777,163,stop,"```json
+{
+  ""chemical_name"": ""Bis(2-ethylhexyl) phthalate"",
+  ""molecular_formula"": ""C24H38O4"",
+  ""cas_number"": ""117-81-7"",
+  ""max_total_water_ug_per_g"": 12.5
+}
+```",
+3,2,0.365795400000934,0.365795400000934,25.820494499999768,106,73,179,0.3535374874999838,2.827211539267796,163,stop,"```json
+{
+  ""chemical_name"": ""Bis(2-ethylhexyl) phthalate"",
+  ""molecular_formula"": ""C24H38O4"",
+  ""cas_number"": ""117-81-7"",
+  ""max_total_water_ug_per_g"": 12.5
+}
+```",
+3,3,0.36487339999803226,0.36487339999803226,25.81790749999709,106,73,179,0.3535143624999869,2.827494830865291,163,stop,"```json
+{
+  ""chemical_name"": ""Bis(2-ethylhexyl) phthalate"",
+  ""molecular_formula"": ""C24H38O4"",
+  ""cas_number"": ""117-81-7"",
+  ""max_total_water_ug_per_g"": 12.5
+}
+```",
+3,4,0.36644710000109626,0.36644710000109626,25.821195800002897,106,73,179,0.3535381763889139,2.82713475260475,163,stop,"```json
+{
+  ""chemical_name"": ""Bis(2-ethylhexyl) phthalate"",
+  ""molecular_formula"": ""C24H38O4"",
+  ""cas_number"": ""117-81-7"",
+  ""max_total_water_ug_per_g"": 12.5
+}
+```",
+3,5,0.36460970000189263,0.36460970000189263,25.81726570000319,106,73,179,0.35350911111112915,2.827565120499611,163,stop,"```json
+{
+  ""chemical_name"": ""Bis(2-ethylhexyl) phthalate"",
+  ""molecular_formula"": ""C24H38O4"",
+  ""cas_number"": ""117-81-7"",
+  ""max_total_water_ug_per_g"": 12.5
+}
+```",
+4,1,0.43511170000056154,0.43511170000056154,62.688284299998486,88,166,254,0.37729195515150254,2.6480227023856195,538,stop,"```json
+{
+  ""possible_match"": false,
+  ""reasoning"": ""The two chemical names refer to different compounds. Report A is '2-Ethylhexyl phthalate', which is a phthalate ester with the formula C16H22O4. Report B is 'Bis(2-ethylhexyl) benzene-1,2-dicarboxylate', which is a diester of benzene-1,2-dicarboxylic acid (terephthalic acid) with 2-ethylhexanol. These are structurally different compounds. The first is a monoester of phthalic acid, while the second is a diester of terephthalic acid. Therefore, they are not the same chemical.""
+}
+```",
+4,2,0.4106138999995892,0.4106138999995892,67.26131099999839,88,166,254,0.4051557399999927,2.46798638819282,538,stop,"```json
+{
+  ""possible_match"": false,
+  ""reasoning"": ""The two chemical names refer to different compounds. Report A is '2-Ethylhexyl phthalate', which is a phthalate ester with the formula C16H22O4. Report B is 'Bis(2-ethylhexyl) benzene-1,2-dicarboxylate', which is a diester of benzene-1,2-dicarboxylic acid (terephthalic acid) with 2-ethylhexanol. These are structurally different compounds. The first is a monoester of phthalic acid, while the second is a diester of terephthalic acid. Therefore, they are not the same chemical.""
+}
+```",
+4,3,0.4580845999989833,0.4580845999989833,66.00462979999793,88,166,254,0.3972517890909027,2.5149750934593564,538,stop,"```json
+{
+  ""possible_match"": false,
+  ""reasoning"": ""The two chemical names refer to different compounds. Report A is '2-Ethylhexyl phthalate', which is a phthalate ester with the formula C16H22O4. Report B is 'Bis(2-ethylhexyl) benzene-1,2-dicarboxylate', which is a diester of benzene-1,2-dicarboxylic acid (terephthalic acid) with 2-ethylhexanol. These are structurally different compounds. The first is a monoester of phthalic acid, while the second is a diester of terephthalic acid. Therefore, they are not the same chemical.""
+}
+```",
+4,4,0.42610079999940353,0.42610079999940353,66.03056659999856,88,166,254,0.3976028230302979,2.513987211492497,538,stop,"```json
+{
+  ""possible_match"": false,
+  ""reasoning"": ""The two chemical names refer to different compounds. Report A is '2-Ethylhexyl phthalate', which is a phthalate ester with the formula C16H22O4. Report B is 'Bis(2-ethylhexyl) benzene-1,2-dicarboxylate', which is a diester of benzene-1,2-dicarboxylic acid (terephthalic acid) with 2-ethylhexanol. These are structurally different compounds. The first is a monoester of phthalic acid, while the second is a diester of terephthalic acid. Therefore, they are not the same chemical.""
+}
+```",
+4,5,0.44618809999883524,0.44618809999883524,61.557605899997725,88,166,254,0.37037222909090234,2.6966610798618817,538,stop,"```json
+{
+  ""possible_match"": false,
+  ""reasoning"": ""The two chemical names refer to different compounds. Report A is '2-Ethylhexyl phthalate', which is a phthalate ester with the formula C16H22O4. Report B is 'Bis(2-ethylhexyl) benzene-1,2-dicarboxylate', which is a diester of benzene-1,2-dicarboxylic acid (terephthalic acid) with 2-ethylhexanol. These are structurally different compounds. The first is a monoester of phthalic acid, while the second is a diester of terephthalic acid. Therefore, they are not the same chemical.""
+}
+```",
