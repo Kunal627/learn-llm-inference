@@ -46,3 +46,79 @@ Benchmark outputs depend on the machine, model, runtime, and configuration. Trea
 - How model weights, activations, and KV caches compete for accelerator memory.
 - How precision and quantization affect memory, numerical error, and model output quality.
 - How GPU execution, memory bandwidth, kernel launches, and batching influence inference performance.
+
+## Inference Serving Scaffold
+
+The repository also includes a starter layout for experimenting with a centralized LiteLLM proxy and inference operations. Copy `.env.example` to `.env`, set the provider API key and a local proxy key, then start the proxy with Docker Compose:
+
+```powershell
+Copy-Item .env.example .env
+docker compose up
+```
+
+The default model is `gpt-4o-mini`, configured in `configs/litellm.yaml`. Update that file to add or change models. The proxy listens on port `4000` by default; requests require the configured `LITELLM_MASTER_KEY`.
+
+| Directory | Purpose |
+| --- | --- |
+| `configs/` | LiteLLM and model configuration |
+| `docker/` | Container-related files |
+| `clients/` | Python clients and concurrent-request experiments |
+| `scripts/` | Operational and administration scripts |
+| `tests/` | API, authentication, and integration tests |
+| `kubernetes/` | Helm values and Kubernetes manifests |
+| `monitoring/` | Prometheus, Grafana, and tracing configuration |
+| `benchmarks/` | Load tests and performance experiments |
+| `reports/` | Benchmark results and capacity reports |
+| `docs/` | Architecture decisions and module documentation |
+
+
+
+
+
+Module 10 – Build the serving platform
+Week 13
+Step	Exercise
+10.1	Understand the final architecture and create repository
+10.2	Deploy LiteLLM Proxy using Docker
+10.3	Connect LiteLLM to llama.cpp
+10.4	Integrate vLLM
+10.5	Test OpenAI-compatible APIs
+10.6	Configure multiple API keys
+10.7	Implement rate limits and token budgets
+10.8	Configure model routing and fallbacks
+10.9	Test streaming responses
+10.10	Test concurrent clients
+10.11	Test timeouts, failures and overload
+10.12	Document architecture and results
+
+Deliverable: Working multi-user LLM inference gateway.
+Module 11 – Deploy using Kubernetes
+Week 14
+Step	Exercise
+11.1	Understand Kubernetes architecture
+11.2	Install Minikube
+11.3	Deploy LiteLLM
+11.4	Deploy inference backend
+11.5	Configure Services and networking
+11.6	Configure replicas and load balancing
+11.7	Experiment with GPU scheduling
+11.8	Test pod failures and recovery
+11.9	Test rolling updates
+11.10	Compare Docker versus Kubernetes
+
+Deliverable: Kubernetes-hosted inference platform.
+Module 12 – Performance and observability
+Weeks 15–16
+Step	Exercise
+12.1	Understand inference performance metrics
+12.2	Configure Prometheus
+12.3	Configure Grafana
+12.4	Monitor vLLM metrics
+12.5	Monitor GPU and KV cache
+12.6	Run concurrent load tests
+12.7	Analyze P50, P95 and P99
+12.8	Identify performance bottlenecks
+12.9	Calculate capacity and cost
+12.10	Produce final production report
+
+Deliverable: Production inference performance and capacity report.
